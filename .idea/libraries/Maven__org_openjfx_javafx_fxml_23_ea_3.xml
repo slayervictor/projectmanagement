@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: org.openjfx:javafx-fxml:23-ea+3" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.openjfx" artifactId="javafx-fxml" version="23-ea+3" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/23-ea+3/javafx-fxml-23-ea+3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/23-ea+3/javafx-fxml-23-ea+3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/23-ea+3/javafx-fxml-23-ea+3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
