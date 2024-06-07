@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.timeRegistrationController" style="-fx-background-color: #f0f4f7;">
+    <top>
+        <HBox spacing="10" style="-fx-padding: 20;">
+            <VBox spacing="5" HBox.hgrow="NEVER">
+                <Label text="Number of hours:" style="-fx-font-size: 16px;"/>
+                <TextField fx:id="hoursTextField" promptText="Enter hours here"/>
+            </VBox>
+            <VBox spacing="5" HBox.hgrow="NEVER">
+                <Label text="Select Item:" style="-fx-font-size: 16px;"/>
+                <ComboBox fx:id="itemComboBox" style="-fx-font-size: 14px;"/>
+            </VBox>
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true" style="-fx-padding: 0 20 0 20;">
+            <ListView fx:id="itemsListView" VBox.vgrow="ALWAYS">
+
+            </ListView>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <HBox style="-fx-padding: 20;">
+            <Button text="Back" onAction="#handleBack" style="-fx-background-color: #3498db; -fx-text-fill: white;"/>
+            <Pane HBox.hgrow="ALWAYS"/> 
+            <Button text="Confirm" onAction="#handleConfirm" style="-fx-background-color: #2ecc71; -fx-text-fill: white;"/>
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,5 @@
+jdoe,JD01,true,10
+asmith,AS02,false,9
+bwayne,BW03,false,20
+clark,CW04,false,4
+djohnson,DJ05,true,15

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.step1ProjCreateController" style="-fx-background-color: #f0f4f7;">
+    <top>
+        <HBox spacing="10" style="-fx-padding: 20;">
+            <VBox spacing="5">
+                <Label text="Start Week:" style="-fx-font-size: 16px;"/>
+                <TextField fx:id="startWeekTextField" promptText="Enter start week" prefWidth="140"/>
+            </VBox>
+            <VBox spacing="5">
+                <Label text="End Week:" style="-fx-font-size: 16px;"/>
+                <TextField fx:id="endWeekTextField" promptText="Enter end week" prefWidth="140"/>
+            </VBox>
+        </HBox>
+    </top>
+    <center>
+
+    </center>
+    <bottom>
+        <HBox style="-fx-padding: 20;">
+            <Button text="Back" onAction="#handleBack" style="-fx-background-color: #3498db; -fx-text-fill: white;"/>
+            <Pane HBox.hgrow="ALWAYS"/> <!-- Spacer pane to push the next button to the right -->
+            <Button text="Next" onAction="#handleNext" style="-fx-background-color: #2ecc71; -fx-text-fill: white;"/>
+        </HBox>
+    </bottom>
+</BorderPane>

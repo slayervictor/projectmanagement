@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="application.afterLoginMainController" style="-fx-background-color: #f0f4f7;">
+    <top>
+        <HBox alignment="CENTER_RIGHT" spacing="10" style="-fx-padding: 10 20 10 20;">
+            <Label fx:id="usernameLabel"
+                   style="-fx-font-size: 16px; -fx-text-fill: #2a2a2a; -fx-alignment: center;"/>
+            <Button text="Log Out" onAction="#handleLogOut" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 5; -fx-alignment: center;"/>
+        </HBox>
+    </top>
+    <center>
+        <VBox spacing="30" alignment="CENTER" style="-fx-padding: 20 20 20 20;">
+            <Button text="See projects" onAction="#switchToSeeProjects" maxWidth="Infinity" maxHeight="Infinity" VBox.vgrow="ALWAYS" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 20px; -fx-background-radius: 5; -fx-pref-height: 200px;"/>
+            <Button text="Register time" onAction="#switchToTimeRegistration" maxWidth="Infinity" maxHeight="Infinity" VBox.vgrow="ALWAYS" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 20px; -fx-background-radius: 5; -fx-pref-height: 200px;"/>
+        </VBox>
+    </center>
+</BorderPane>
